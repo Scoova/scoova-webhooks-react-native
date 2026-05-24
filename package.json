@@ -1,0 +1,51 @@
+{
+  "name": "@scoova/webhooks-react-native",
+  "version": "1.0.0",
+  "description": "React Native build of @scoova/webhooks — re-exports the standalone web client. Pure TypeScript, no native modules. Uses `crypto.subtle` (available in modern RN runtimes; see README for older RN).",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "types": "src/index.ts",
+  "source": "src/index.ts",
+  "react-native": "src/index.ts",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "license": "Apache-2.0",
+  "author": "Scoova <info@scoo-va.info>",
+  "homepage": "https://cloud.scoo-va.info",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Scoova/scoova-webhooks-react-native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Scoova/scoova-webhooks-react-native/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "scoova",
+    "webhooks",
+    "react-native",
+    "hmac",
+    "signature-verification"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-native": ">=0.70",
+    "@scoova/webhooks": "^1.0.0"
+  },
+  "dependencies": {
+    "@scoova/webhooks": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
